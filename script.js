@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     document.head.appendChild(style);
     document.body.appendChild(popup);
-  }, 3000)
+  }, 1000)
 });
 
 function jumpscare() {
