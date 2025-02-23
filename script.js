@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   popup.className = "errorpopup";
   popup.innerHTML = `
     <h2>Oh, this is a very unusual error.</h2>
+    <h2>Click the button.</h2>
     <button onclick="jumpscare()">Contact Support</button>
   `;
 
@@ -33,9 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
       background: #2ea44f;
       color: white;
       border: none;
-      padding: 8px 16px;
+      padding: 24px 48px;
       border-radius: 6px;
-      font-size: 14px;
+      font-size: 26px;
       cursor: pointer;
     }
     .errorpopup button:hover {
@@ -46,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     document.head.appendChild(style);
     document.body.appendChild(popup);
-  }, 1000)
+  }, 300)
 });
 
 function jumpscare() {
